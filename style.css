@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,400&display=swap');
+@keyframes changeBackgroundColor {
+    0% {
+        background-image:url(img/foto.jpg) ;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%{
+        background-image:url(img/Foto2.jpg) ;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background-image: url(img/Foto3.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background-image: url(img/foto4.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    85% {
+        background-image: url(img/Foto1.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image:url(img/foto.jpg) ;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    padding: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: #ffe00c;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: black;
+}
+.cont-header{
+    border-radius: 5px;
+    margin: 0;
+    background-color: #ffe00c;
+    padding: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 99;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo{
+    background-image: url(img/logo2.png);
+    background-position: center ;
+    background-repeat: no-repeat; 
+    width: 65px;
+    height: 80px;
+    
+}
+.apresent{
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.navbar a {
+    color: black;
+    font-size:16.5px;
+    margin: auto 10px auto 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar a:hover{
+    color: #fafafa;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 6px auto auto auto;
+    width: 95%;
+    height: 80px;
+
+}
+.navbar li{
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.container{
+    width: auto;
+    height: 500px;
+    padding: 20px 0 20px 20px;
+
+}
+
+.cards{
+    grid-area: cards;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.card1{
+    background-color: #2a2a2a;
+    height: 470px;
+    width: 27%;
+    margin-right: 20px;
+    border-radius:10px;
+    padding: 10px;
+}
+.card1-back{
+    border-radius:10px;
+    width: 100%;
+    height: 250px;
+    background-image: url(img/foto4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.card2{
+    background-color: #2a2a2a;
+    height: 470px;
+    width: 27%;
+    margin-right: 20px;
+    border-radius:10px;
+    padding: 10px;
+}
+.card2-back{
+    border-radius:10px;
+    width: 100%;
+    height: 250px;
+    background-image: url(img/foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card3{
+    background-color: #2a2a2a;
+    height: 470px;
+    width: 27%;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius:10px;
+}
+.card3-back{
+    border-radius:10px;
+    width: 100%;
+    height: 250px;
+    background-image: url(img/foto5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-card{
+    color: white;
+    text-align: center;
+    max-height: 185px;
+    overflow: hidden;
+    
+    text-overflow: ellipsis;
+}
+.linha-cont{
+    width: auto;
+    height: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha{
+    height: 0.5px;
+    width: 160px;
+    border-top: 1px solid #fafafa;
+}
+.icone1{
+    background-image: url(img/biblia.png);
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+.icone2{
+    margin: 5px;
+    background-image: url(img/church.png);
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+}
+.icone3{
+    background-image: url(img/cross.png);
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+}
+
+.info{
+    width: auto;
+    height: 400px;
+    padding:20px;
+}
+.card-info{
+    color: wheat;
+    width: auto;
+    overflow: hidden;
+    background-color: #2a2a2a;
+    height: 380px;
+    padding: 10px;
+    border-radius:10px;
+    text-align: center;
+    display: grid;
+    grid-template-areas:'titulo titulo'
+                        'image texto';
+                        grid-template-columns: 1fr 1.5fr;
+                        grid-template-rows: 0.4fr 2fr;
+}
+.card-info-back{
+
+    height: auto;   
+    border-radius:10px;
+    grid-area: image;
+    background-image: url(img/leao1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-info h1{
+   
+    grid-area: titulo;
+    font-size: 35px;
+    margin: 15px 55vw 50px 0;
+    height: 26px;
+}
+.card-info-texto{
+    
+    height: auto;
+    text-align: center;
+    grid-area: texto;
+    padding: 20px;
+}
+
+.footer{
+    width: auto;
+    padding: 10px;
+    height: 140px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+.footer a{
+    margin: 20px;
+}
+.card-footer{
+    margin-top: 20px;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+}
+@media only screen and (max-width: 875px) {
+
+}
